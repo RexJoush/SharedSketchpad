@@ -1,0 +1,112 @@
+ /* pages/tools/tools.wxss */
+page {
+  height: 100%;
+}
+
+.clearall{
+  width:80rpx; 
+  height:80rpx;
+  position: absolute;
+  right: 0rpx;
+  top: 0rpx;
+
+}
+
+.share {
+  width: 100rpx;
+  height: 100rpx;
+}
+.myCanvas{
+  width: 100%;
+  height: 100%;
+}
+.canvas_area{
+  width: 100%;
+  height: 80%;
+  background-color: #FFF;
+  border: 1px solid #000;
+}
+.canvas_tools {
+  position: relative;
+  width: 100%;
+  height: 20%;
+} 
+
+.color {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius:50%; 
+  display: inline-block;
+  margin-right: 5rpx;
+}
+
+.firstLine{
+  position: relative;
+  top: -100rpx;
+  left: 115rpx;
+}
+.secondLine{
+  position: relative;
+  top: -100rpx;
+  left: 15rpx;
+}
+.menu {
+  position: relative;
+  top: 10rpx;
+  left: 10rpx;
+}
+
+.red{ background-color: red;}
+.green{ background-color: green;}
+.yellow{ background-color: yellow;}
+.pink{ background-color: pink;}
+.cyan{ background-color: cyan;}
+.gray{ background-color: gray;}
+.orange{ background-color: orange;}
+.purple{ background-color: purple;}
+.blackish{ background-color: #808000;}
+.brown{ background-color: brown;}
+.blue{ background-color: blue;}
+.black{ background-color: black;}
+.cancel{
+  background: url(http://www.rexjoush.com/img/close.png) no-repeat;
+  background-size: 100% 100%; 
+  border: 0rpx;
+}
+
+.lp {
+  position: relative;
+  top: 10rpx;
+  left: 50rpx;
+}
+.mp {
+  position: relative;
+  top: 10rpx;
+  left: 80rpx;
+}
+.sp {
+  position: relative;
+  top: 10rpx;
+  left: 100rpx;
+}
+.eraser {
+  position: relative;
+  top: 10rpx;
+  left: 120rpx;
+}
+.more {
+  position: relative;
+  top: 10rpx;
+  left: 140rpx;
+}
+
+.share {
+  position: relative;
+  top: 10rpx;
+  left: 540rpx;
+}
+.delete {
+  position: relative;
+  top: 10rpx;
+  left: 520rpx;
+}

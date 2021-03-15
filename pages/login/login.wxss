@@ -1,0 +1,21 @@
+/* pages/login/login.wxss */
+.login {
+  width: 300rpx;
+  text-align: center;
+  height: 100rpx;
+  color: white;
+  border: 1rpx solid white;
+  border-radius: 40rpx;
+  font-family: 微软雅黑;
+  background-color: #e64340;
+}
+.text {
+  position: relative;
+  bottom: 50rpx;
+  font-size: 40rpx;
+  font-family: 微软雅黑;
+  font-weight: 900;
+}
+.click {
+  background-color: #C74340; 
+}

@@ -1,0 +1,20 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/Demo/Demo",
+    "pages/shareGroup/shareGroup",   
+    "pages/logs/logs",
+    "pages/shareSingle/shareSingle",
+    "pages/login/login"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Shared Sketchpad",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "white",
+    "disableScroll": true,
+    "backgroundColorBottom":"white"
+  }
+}

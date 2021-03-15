@@ -1,0 +1,38 @@
+<!--画布区域-->
+<view class="canvas_area"> 
+  <canvas canvas-id="myCanvas" class="myCanvas" disable-scroll="true" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd" bindchange="sendMsg">
+  </canvas>
+</view>
+<!--画布工具区域-->
+<view class='canvas_tools'>
+  <button class='color menu' style='background-color:{{obvious}};' bindtap='colorMenu'></button>
+  <view hidden='{{isColorSelect}}'>
+      <view class='firstLine'>
+        <button bindtap='hidecolor' class='color red' data-param="red"></button>
+        <button bindtap='hidecolor' class='color green' data-param="green"></button>
+        <button bindtap='hidecolor' class='color yellow' data-param="yellow"></button>
+        <button bindtap='hidecolor' class='color pink' data-param="pink"></button>
+        <button bindtap='hidecolor' class='color cyan' data-param="cyan"></button>
+        <button bindtap='hidecolor' class='color gray' data-param="gray"></button>
+      </view>
+      <view class='secondLine'>
+        <button bindtap='hidecolor' class='color cancel' data-param="{{obvious}}"></button>
+        <button bindtap='hidecolor' class='color orange' data-param="orange"></button>
+        <button bindtap='hidecolor' class='color purple' data-param="purple"></button>
+        <button bindtap='hidecolor' class='color blackish' data-param="#808000"></button>
+        <button bindtap='hidecolor' class='color brown' data-param="brown"></button>
+        <button bindtap='hidecolor' class='color blue' data-param="blue"></button>
+        <button bindtap='hidecolor' class='color black' data-param="black"></button>
+      </view>
+  </view>
+  <image src="{{isLPencilSelect?'../../images/lpencil1.png':'../../images/lpencil0.png'}}" style='width: 100rpx; height: 100rpx; ' bindtap='lpencil' class='lp' hidden='{{!isColorSelect}}'></image> 
+    <image src="{{isMPencilSelect?'../../images/mpencil1.png':'../../images/mpencil0.png'}}" style='width: 100rpx; height: 100rpx; ' bindtap='mpencil' class='mp' hidden='{{!isColorSelect}}'></image> 
+    <image src="{{isSPencilSelect?'../../images/spencil1.png':'../../images/spencil0.png'}}" style='width: 100rpx; height: 100rpx; ' bindtap='spencil' class='sp' hidden='{{!isColorSelect}}'></image> 
+    <image src="{{isEraser?'../../images/eraser1.png':'../../images/eraser0.png'}}" style='width: 100rpx; height: 100rpx; ' bindtap='eraser' class='eraser' hidden='{{!isColorSelect}}'></image> 
+    <image src='../../images/more.png' bindtap='more' class='more' style='width: 100rpx; height: 100rpx; ' hidden='{{!isColorSelect}}'></image>
+  <view hidden='{{isMore}}'>
+    <image bindtap='clearAll' class='delete' src='../../images/delete.png' style='width: 100rpx; height: 100rpx; '></image>
+    <image bindtap='share' class='share' src='../../images/share.png' style='width: 100rpx; height: 100rpx; '></image>
+  </view>
+  <slider hidden='{{!isEraser}}' activeColor='#515151' value='{{eraser}}' show-value='true' bindchange='changeEarser' backgroundColor='#515151' block-color='#515151' block-size='20' max='100' step='1' min='1' show-value='true'></slider>
+</view>

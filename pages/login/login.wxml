@@ -1,0 +1,9 @@
+<!--pages/login/login.wxml-->
+<!--wxml-->
+<!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+<!-- 需要使用 button 来授权登录 -->
+
+<view class="container">
+  <text class='text'>需要获取到您的用户名和头像信息</text>
+  <button class='login' hover-class='click' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" >授权登录</button>
+</view>

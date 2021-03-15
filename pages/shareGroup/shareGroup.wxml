@@ -1,0 +1,20 @@
+<!--pages/shareGroup/shareGroup.wxml-->
+<view class='up'>
+  <button class='invitation'  hover-class='click' open-type='share'> + 邀请好友</button>
+</view>
+<view class='down'>
+  <view class='down_up'>
+    <image src='{{avatarUrl1}}' class='portrait A'></image>
+    <image src='{{avatarUrl2}}' class='portrait B'></image>
+    <image src='{{avatarUrl3}}' class='portrait C'></image>
+  </view>
+  <view class='down_down'>
+    <image src='{{avatarUrl4}}' class='portrait D'></image>
+    <image src='{{avatarUrl5}}' class='portrait E'></image>
+    <image src='{{avatarUrl6}}' class='portrait F'></image>
+  </view>
+  <view class='bt'>
+      <button bindtap='groupbeginmsg'  hover-class='clickbegin' class='begin' hidden='{{multiple || isHost}}'>开始画画</button>  
+     <!-- <button bindtap='groupbeginmsg'  hover-class='clickbegin' class='begin' >开始画画</button>  -->
+  </view>
+</view>

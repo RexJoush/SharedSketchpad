@@ -1,0 +1,23 @@
+/**index.wxss**/
+page {
+  width: 100%;
+  background: url(https://www.rexjoush.com/img/background.png);
+}
+.invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70rpx;
+  width: 300rpx;
+  text-align: center;
+  height: 100rpx;
+  color: white;
+  font-family: 微软雅黑;
+  border: 1rpx solid white;
+  border-radius: 40rpx;
+  background-color: #e64340;
+}
+
+.click {
+  background-color: #C74340; 
+}

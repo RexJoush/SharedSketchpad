@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <button class='invitation' hover-class='click' bindtap='shareSingle'> 自己画</button>
+  <button class='invitation' hover-class='click' bindtap='shareGroup'> 一起画</button>
+</view>
